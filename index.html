@@ -1,221 +1,192 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Justin's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="eng">
+    <html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b6047c551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header"><span>01.</span> Home</a></li>
+                    <li><a href="#about"><span>02.</span> About</a></li>
+                    <li><a href="#portfolio"><span>03.</span> Portfolio</a></li>
+                    <li><a href="#contact"><span>04.</span> Contact</a></li>
+                    <li><a href="images/ResumeJC.pdf" download class="resume">Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <img src="images/logo.png" class="logo">
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, Im <span>Justin</span> Cao <br></h1>
+                <h2>This page is also viewable on mobile! <br>
+                    Certain buttons, and information have been purposely omitted and disable please contact me if you need access.
+                </h2>
+            </div>
+        </div>
+    </div>
+<!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dynamic junior web developer with a proven track record of implementing engaging E-Commerce web pages. Eager to leverage my strong foundation in front-end web development technologies and languages, such as HTML, CSS, JavaScript, and React, to transition into a more technical software development role. Seeking opportunities to expand and refine my skills and contribute to the development of innovative software solutions.</p>                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing web applications and web pages with HTML, CSS, JavaScript, CMS, APIs.</li>
+                            <li><span>SEO Practices</span><br><span class="seo">01.</span> On-Page<br><span class="seo">02.</span> Off-Page<br><span class="seo">03.</span> Technical<br><span class="seo">04.</span> Content Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front End Web Developer</span><br>Tyson's Web Solutions</li>
+                            <li><span>Front End Web Developer</span><br>Child Development Services Of Murfreesboro</li>
+                            <li><span>Data Entry</span><br>Child Development Services Of Murfreesboro</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.S. Computer Science, Minor in Business Management</span> <span class="city"> &ensp;Middle Tennessee State University<br>&ensp;Murfreesboro, TN</span></li>
+                            <li><span>A.S. Computer Programming and Analysis</span><span class="city">&ensp;Valencia College<br>&ensp;Orlando, FL</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1">
+                    <img src="images/aboutme.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Webpages and Web Applications Showcase</h3>
+                    <p>Showcase of various published webpages and web applications. Skills and languages used included but not limited to HTML, XML, CSS, JavaScript, React, WordPress and other CMS.</p>                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/wordle.png">
+                <div class="layer">
+                    <h3>Wordle Clone App</h3>
+                    <p>Wordle Clone Application developed within xCode, and the Swift programming language. Includes project to scrape and fill dictionary of five letter words. Also includes FireBase API for user login and tracking statistics.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Miscellaneous Projects</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Pretium nibh ipsum consequat nisl vel pretium.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See More</a>
+    </div>
+</div>
+<!----------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> JustinMinhCao@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (###) ### - ####</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+ <!--               <a href="images/my-cv.pdf" download class="btn btn2"> Download Resume</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Justin. All Rights Reserved.</p>
+    </div>
+</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<script>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Justin Cao's<br />
-						Portfolio</h1>
-						<p>Software developer looking to expand his technical skills and contribute to innovative projects<br />
-							 by leveraging his experience in front-end development and user experience design.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Justin Cao</a>
-					</header>
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects 1</a></li>
-					<li><a href="generic.html">Projects 2</a></li>
-					<!--	
-							<li><a href="elements.html">Elements Reference</a></li>
--->	
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linked In</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    function openmenu(){
+        sidemeu.style.left = "0";
 
-				<!-- Main -->
-					<div id="main">
+    }
+    function closemenu(){
+        sidemeu.style.left = "-200px";
 
-						<!-- Featured Post -->
-						<!--
-							<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
-						-->
+    }
+</script>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Fractal Fern<br />
-											</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Fern0.png" alt="" /></a>
-									<p>Fractal Fern projecting using WebGL, HTML5, and  JavaScript.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/justinminhcao/Fern" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK3KjLIFITDceK9zSIEeZ-9rsN1TefMH3PlPtsu67WxcA5347RqL4q1wURkKqmJZwrEQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
-										<h2><a href="#">Treasure Map<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/TM0.png" alt="" /></a>
-									<p>Uses WebGL HTML5, CSS, And JavaScript to render a scene of a treasure map, includes event handlers for Audio, texture rendering, vertex shading, model view matrices, creation of extruded and fractal shapes etc.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/justinminhcao/TreasureMap#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Web Developer Screen Caps Showcase<br />
-										</a></h2>
-									</header>
-
-									<div class="scroll-container">
-										<img src="images/CDS1.png" alt="" width="600" height="400">
-										<img src="images/CDS2.png" alt="" width="600" height="400">
-										<img src="images/fid1.png" alt="" width="600" height="400">
-										<img src="images/fid2.png" alt="" width="600" height="400">
-										<img src="images/fid4.png" alt="" width="600" height="400">
-										<img src="images/fid5.png" alt="" width="600" height="400">
-										<img src="images/sudstud2.png" alt="" width="600" height="400">
-										<img src="images/sudstud5.png" alt="" width="600" height="400">
-										<img src="images/sudstud6.png" alt="" width="600" height="400">
-									  </div>
-									  
-									<!-- <p>Various Web Developer Showcase</p> 
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								-->
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Swift War Card Game<br />
-											</a></h2>
-									</header>
-									<a href="#" class="image"><img src="images/WCG1.png" width="195" height="420"  alt="" /></a>
-									
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Guide Book App<br />
-											</a></h2>
-									</header>
-									<div class="scroll-container">
-										<img src="images/GB1.png" alt="" style='height: 60%; width: 60%; object-fit: contain'> 
-										<img src="images/GB2.png" alt="" style='height: 60%; width: 60%; object-fit: contain'> 
-										<img src="images/GB3.png" alt="" style='height: 60%; width: 60%; object-fit: contain'> 
-										<img src="images/GB4.png" alt="" style='height: 60%; width: 60%; object-fit: contain'> 
-									  </div>
-									<!--<p>Guide Book App, implemented on iOS, xcode, swift.</p>
-									-->
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-
-										<h2><a href="#">Wordle Clone<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p></p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Murfreesboro, TN</p>
-							</section>
-							<section class="alt">
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">JustinMinhCao@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/justincaocs/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-						<section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
-<style>
-	div.scroll-container {
-	  background-color: #333;
-	  overflow: auto;
-	  white-space: nowrap;
-	  padding: 10px;
-	  border-radius: 8px;
-	}
-	
-	div.scroll-container img {
-	  padding: 10px;
-	}
